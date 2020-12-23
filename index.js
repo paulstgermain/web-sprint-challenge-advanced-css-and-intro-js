@@ -256,7 +256,7 @@ function get20s(arr){
   for(let i = 0; i < artists.length; i++){
     const yearsArr = artists[i].years.split(" ");
 
-    if(yearsArr[0] >= '1900' && yearsArr[2] <= 1999){
+    if(parseInt(yearsArr[0]) >= 1900 && parseInt(yearsArr[2]) <= 1999){
       newArr.push(artists[i].name);
     }
 
